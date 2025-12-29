@@ -1,16 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import 'primeicons/primeicons.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './Layout/Layout';
+import HomePage from './pages/Home';
+import ProjectPage from './pages/Project';
+import AboutPage from './pages/About';
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      
-      <h2>this is body</h2>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="project" element={<ProjectPage />} />
+          <Route path="about" element={<AboutPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
