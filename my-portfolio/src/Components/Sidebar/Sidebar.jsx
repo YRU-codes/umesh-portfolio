@@ -9,22 +9,20 @@ const navItems = [
   { label: "About", icon: "pi pi-user", id: "about", path: "/about" },
 ];
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false); // Default closed for cleaner look initially, or user pref
+const Sidebar = ({ isOpen, toggle }) => {
+  // Local state removed, using props now
 
   return (
     <aside className={`sidebar ${isOpen ? "open" : ""} flex justify-col gap4`}>
       <div className="sidebar-header">
-        {/* Use a wrapper for logo to control it better */}
         <div className="logo-container">
-          <img src={logo} alt="Logo" className="logo" />
-          {isOpen && <span className="logo-text">Portfolio</span>}
+           {isOpen && <span className="logo-text">Portfolio</span>}
         </div>
 
         <button
           className="toggle-btn"
           type="button"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={toggle}
         >
           <i className={`pi ${isOpen ? "pi-angle-left" : "pi-bars"}`} style={{ fontSize: '1.2rem' }}></i>
         </button>

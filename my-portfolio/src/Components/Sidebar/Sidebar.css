@@ -1,12 +1,12 @@
 /* Sidebar Container */
 .sidebar {
-  position: fixed; /* Fixed to viewport */
+  position: fixed; 
   top: 0;
   left: 0;
   height: 100vh;
-  width: 70px; /* Collapsed width */
-  background: rgba(30, 30, 30, 0.95); /* Dark semi-transparent background */
-  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  width: 70px; 
+  background: rgba(30, 30, 30, 0.95); 
+  backdrop-filter: blur(10px); 
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
@@ -15,11 +15,11 @@
   padding: 1rem 0.5rem;
   box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
   color: #fff;
-  overflow: hidden; /* Hide overflow when collapsed */
+  overflow: hidden;   
 }
 
 .sidebar.open {
-  width: 240px; /* Expanded width */
+  width: 240px; 
 }
 
 /* Header & Toggle */
@@ -34,7 +34,6 @@
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 12px;
     overflow: hidden;
 }
 
@@ -137,6 +136,7 @@
     background: rgba(239, 68, 68, 0.1);
     color: #f87171;
 }
+
 
 /* Keyframes */
 @keyframes fadeIn {

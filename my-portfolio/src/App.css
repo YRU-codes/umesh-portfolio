@@ -2,32 +2,32 @@
     background-color: #141c27;
     /* width: 100%; */
     min-height: 100vh;
-    padding-left: 70px;
-    /* Offset for collapsed sidebar */
-    transition: padding-left 0.3s ease;
+    /* padding-left handled dynamically in Layout.jsx */
+    /* padding-left: 70px; */
+    /* transition: padding-left 0.3s ease; */
 }
 
-.gap1{
+.gap1 {
     gap: 1rem;
 }
 
-.gap2{
+.gap2 {
     gap: 2rem;
 }
 
-.gap3{
+.gap3 {
     gap: 3rem;
 }
 
-.gap4{
+.gap4 {
     gap: 4rem;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.justify-col{
+.justify-col {
     flex-direction: column;
 }
 
